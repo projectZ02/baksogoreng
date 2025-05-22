@@ -1,285 +1,337 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Sattvika Memories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bakso Goreng</title>
     <link href="output.css" rel="stylesheet" />
+
+    <!-- Swiper CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
 
-  <body class="bg-slate-100 text-center p-0 m-0">
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full z-50">
-    <div class="flex items-center justify-between px-10 py-6 bg-black bg-opacity-30 backdrop-blur-sm text-white">
-      <h1 class="text-3xl font-serif font-bold tracking-wide ml-[110px]">
-        Sattvika Memories
-      </h1>
-    </div>
-  </nav>
+  <body class="font-sans bg-white text-gray-800">
+    <!-- Navbar -->
+    <header
+      class="flex justify-between items-center py-6 px-10 shadow-md bg-white z-10 sticky top-0"
+      role="banner"
+    >
+      <div class="text-orange-500 font-bold text-xl">
+        <span class="bg-orange-500 text-white px-3 py-1 rounded-full"
+          >Food</span
+        >
+      </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="relative h-[90vh] pt-[120px]">
-    <!-- Background Foto -->
-    <img
-      loading="lazy"
-      src="wisuda.jpg"
-      alt="Wisuda"
-      class="absolute inset-0 w-full h-full object-cover z-0"
-    />
-    <!-- Konten di Atas Gambar -->
-    <div class="relative z-10 max-w-2xl text-left ml-[150px] ">
-      <h1 class="text-[90px] font-serif font-bold leading-tight mb-4">
-        <div class="text-white">Sattvika</div>
-        <div class="text-orange-300">Memories.</div>
-      </h1>
+    <!-- Hero Section -->
+    <section
+      class="flex flex-col md:flex-row items-center justify-between px-10 py-20 max-w-7xl mx-auto"
+      role="region"
+      aria-label="Hero Section"
+    >
+      <div class="md:w-1/2 space-y-6">
+        <h1
+          class="text-4xl md:text-5xl font-bold leading-tight text-orange-600"
+        >
+          Membuat waktu menjadi waktu yang baik<br />
+          dengan Cemilan yang lezat.
+        </h1>
+        <p class="text-gray-600 text-lg">
+          Buat waktu santaimu makin seru dengan snack bakso goreng kami yang
+          renyah dan gurih. Cemilan lezat, waktu jadi lebih baik!
+        </p>
+        <button
+          class="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          type="button"
+          aria-label="Pesan Sekarang"
+          onclick="alert('Fitur pemesanan segera hadir!')"
+        >
+          Pesan Sekarang
+        </button>
+      </div>
 
-      <p class="text-lg text-gray-300 mb-6">"Abadikan Momen Wisuda Indahmu di Solo, Jogja, dan Sekitarnya!"
-
-Kami siap mengabadikan momen wisuda terbaikmu di Solo, Jogja, dan sekitarnya! Dengan sentuhan profesional, setiap ekspresi kebahagiaanmu akan menjadi kenangan abadi.
-
-Hubungi kami dan jadikan wisudamu semakin berkesan!</p>
-      <a
-        href="#order"
-        class="inline-block px-6 py-3 bg-transparent text-white border border-white rounded-lg font-semibold shadow hover:bg-white hover:text-black transition-all duration-300 relative"
+      <div
+        class="md:w-1/2 mt-10 md:mt-0 relative flex justify-center items-center"
+        aria-hidden="true"
       >
-        <span class="absolute top-0 bottom-0 left-0 w-[6px] bg-transparent rounded-l-lg z-10"></span>
-        Order Now
-      </a>
-    </div>
-  </section>
+        <div
+          class="w-72 h-72 bg-orange-100 rounded-full shadow-xl absolute z-0"
+        ></div>
+        <img
+          src="1.png"
+          alt="Ilustrasi snack bakso goreng"
+          class="w-full max-w-md relative z-10 drop-shadow-xl"
+          loading="lazy"
+        />
+      </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-32 bg-black">
-  <div class="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center lg:items-start justify-between space-y-12 lg:space-y-0">
-    <!-- Kiri: Judul -->
-    <div class="text-center lg:text-left text-white">
-      <h2 class="text-5xl sm:text-6xl md:text-7xl font-serif font-bold leading-none">
-        About<br />
-        <span class="text-orange-300">Us</span>
-      </h2>
-    </div>
-
-    <!-- Kanan: Penjelasan -->
-    <div class="w-full lg:w-2/3 lg:pl-12 text-center lg:text-left">
-      <p class="text-lg text-gray-300 leading-relaxed">
-        Satvika Memories hadir untuk mengabadikan momen-momen terbaik dalam
-        hidup Anda, terutama dalam perayaan kelulusan. Kami percaya bahwa
-        setiap senyuman, pelukan, dan kebanggaan di hari kelulusan pantas
-        untuk dikenang selamanya. Dengan tim profesional dan peralatan
-        terbaik, kami memberikan layanan fotografi yang berkualitas tinggi
-        untuk memastikan kenangan Anda tetap hidup selamanya.
-      </p>
-      <p class="text-lg text-gray-300 leading-relaxed">
-        1. Muhammad Agung Reza Yudha (22.11.5314)
-      </p>
-        <p class="text-lg text-gray-300 leading-relaxed">
-        2. Gunawan Sylvester (22.11.5268)
-      </p>
-      <p class="text-lg text-gray-300 leading-relaxed">
-        3. Ali Samsul Latupono (22.11.5310)
-      </p>
-    </div>
-  </div>
-  </section>
-<section id="gallery" class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-4">
-    <!-- Heading -->
-    <div class="text-center mb-12">
-      <h2 class="text-5xl font-bold text-gray-800 mb-4">
-        Our <span class="text-orange-400 font-serif">Gallery</span>
-      </h2>
-      <p class="text-gray-500 text-lg">
-        Potret momen terbaik dari Sattika Memories.
-      </p>
-    </div>
-
-    <!-- Masonry Container -->
-    <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-      <!-- 20 Gambar -->
-      <img loading="lazy" onclick="openLightbox(this)" src="1.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 1">
-      <img loading="lazy" onclick="openLightbox(this)" src="2.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 2">
-      <img loading="lazy" onclick="openLightbox(this)" src="3.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 3">
-      <img loading="lazy" onclick="openLightbox(this)" src="4.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 4">
-      <img loading="lazy" onclick="openLightbox(this)" src="5.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 5">
-      <img loading="lazy" onclick="openLightbox(this)" src="6.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 6">
-      <img loading="lazy" onclick="openLightbox(this)" src="7.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 7">
-      <img loading="lazy" onclick="openLightbox(this)" src="8.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 8">
-      <img loading="lazy" onclick="openLightbox(this)" src="9.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 9">
-      <img loading="lazy" onclick="openLightbox(this)" src="10.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 10">
-      <img loading="lazy" onclick="openLightbox(this)" src="11.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 11">
-      <img loading="lazy" onclick="openLightbox(this)" src="12.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 12">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF0001.JPG" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 13">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF0002.JPG" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 14">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF0015.JPG" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 15">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF0017.JPG" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 16">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF0020.JPG" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 17">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF0036.JPG" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 18">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF0045.JPG" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 19">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF1958.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 20">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF1961.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 21">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF1983.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 22">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF1999-2.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 23">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF2009.jpg" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 24">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF8731.JPG" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 25">
-      <img loading="lazy" onclick="openLightbox(this)" src="DSCF8737.JPG" class="w-full rounded-lg mb-4 break-inside-avoid cursor-pointer" alt="Gallery Image 26">
-    </div>
-  </div>
-
-  <!-- Lightbox Modal -->
-  <div
-    id="lightbox"
-    class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50"
-    onclick="closeLightbox(event)"
-  >
-    <img
-      id="lightbox-img"
-      src=""
-      class="max-w-4xl max-h-[90vh] rounded-lg shadow-xl"
-      alt="Preview"
-    />
-  </div>
-</section>
-
-
-<section id="whyme" class="bg-black text-white py-20 px-6">
-  <div class="max-w-6xl mx-auto text-center mb-16">
-    <h2 class="text-5xl font-serif font-bold mb-4">WHY SATTVIKA</h2>
-    <p class="text-gray-400 max-w-2xl mx-auto">
-      Setiap kenangan berhak untuk diabadikan dengan cara yang paling tulus. Kami hadir bukan hanya sebagai dokumentator, tapi sebagai penjaga momen yang bermakna—agar tak sekadar menjadi arsip, tetapi cerita hidup.
-    </p>
-  </div>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    <!-- Box 1: Personal Touch -->
-    <div class="border border-gray-600 p-6 rounded-lg hover:border-orange-300 transition">
-      <div class="mb-4 text-3xl">📸</div>
-      <h3 class="text-xl font-semibold mb-2">Personal Touch</h3>
-      <p class="text-gray-400 text-sm">Pendekatan yang intim dan hangat</p>
-      <p class="text-gray-400 text-sm">Setiap klien adalah cerita berbeda</p>
-      <p class="text-gray-400 text-sm">Tidak hanya teknis, tapi rasa</p>
-      <p class="text-gray-400 text-sm">Foto yang memuat emosi nyata</p>
-    </div>
-
-    <!-- Box 2: Creative Direction -->
-    <div class="p-6 rounded-lg">
-      <div class="mb-4 text-3xl">🎨</div>
-      <h3 class="text-xl font-semibold mb-2">Creative Direction</h3>
-      <p class="text-gray-400 text-sm">Konsep unik untuk setiap sesi</p>
-      <p class="text-gray-400 text-sm">Estetika yang menyesuaikan jiwa Anda</p>
-      <p class="text-gray-400 text-sm">Tim kreatif dengan visi kuat</p>
-      <p class="text-gray-400 text-sm">Warna, cahaya, dan komposisi</p>
-    </div>
-
-    <!-- Box 3: Emotional Value -->
-    <div class="p-6 rounded-lg">
-      <div class="mb-4 text-3xl">💖</div>
-      <h3 class="text-xl font-semibold mb-2">Emotional Value</h3>
-      <p class="text-gray-400 text-sm">Lebih dari sekadar gambar</p>
-      <p class="text-gray-400 text-sm">Dokumentasi bernyawa</p>
-      <p class="text-gray-400 text-sm">Kami jaga momen paling berharga</p>
-      <p class="text-gray-400 text-sm">Untuk dikenang sepanjang masa</p>
-    </div>
-
-    <!-- Box 4: Tim Profesional -->
-    <div class="p-6 rounded-lg">
-      <div class="mb-4 text-3xl">👥</div>
-      <h3 class="text-xl font-semibold mb-2">Tim Profesional</h3>
-      <p class="text-gray-400 text-sm">Berpengalaman dan berdedikasi</p>
-      <p class="text-gray-400 text-sm">Beradaptasi dengan kebutuhan unik</p>
-      <p class="text-gray-400 text-sm">Responsif dan komunikatif</p>
-      <p class="text-gray-400 text-sm">Hasil yang bisa diandalkan</p>
-    </div>
-
-    <!-- Box 5: One Stop Memory -->
-    <div class="p-6 rounded-lg">
-      <div class="mb-4 text-3xl">🗂️</div>
-      <h3 class="text-xl font-semibold mb-2">One Stop Memory</h3>
-      <p class="text-gray-400 text-sm">Dari foto hingga video</p>
-      <p class="text-gray-400 text-sm">Cetak album hingga penyimpanan cloud</p>
-      <p class="text-gray-400 text-sm">Solusi menyeluruh dalam satu layanan</p>
-      <p class="text-gray-400 text-sm">Semua demi cerita Anda</p>
-    </div>
-  </div>
-</section>
-
-
-<section id="pricelist" class="bg-white text-black py-20 px-4">
-  <div class="text-center mb-12">
-    <h1 class="text-4xl font-bold font-serif">PRICELIST</h1>
-  </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-    <!-- STANDARD -->
-    <div
-      class="border-2 border-blue-500 p-6 rounded-lg bg-black transition duration-300 transform hover:scale-105 hover:z-10 hover:shadow-xl"
+    <!-- Carousel Section -->
+    <section
+      class="py-16 px-4 bg-orange-50"
+      role="region"
+      aria-label="Produk Kami"
     >
-      <h2 class="text-2xl text-white font-bold mb-2">STANDARD</h2>
-      <p class="text-lg text-blue-400 font-semibold mb-6">Rp.250.000</p>
-      <ul class="mb-6 space-y-2 text-sm">
-        <li><span class="text-gray-300">1 Wisudawan</li>
-        <li><span class="text-gray-300">60 Menit</li>
-        <li><span class="text-gray-300">All File On Google Drive</li>
-        <li><span class="text-gray-300">35 Photo Edited</li>
-      </ul>
-      <button class="w-full py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">
-        Photo Session Schedule
-      </button>
-    </div>
-
-    <!-- PREMIUM -->
-    <div
-      class="border border-gray-600 p-6 rounded-lg bg-black transition duration-300 transform hover:scale-105 hover:z-10 hover:shadow-xl"
-    >
-      <h2 class="text-2xl text-white font-bold mb-2">BESTIE</h2>
-      <p class="text-lg text-white font-semibold mb-6">Rp.400.000</p>
-      <ul class="mb-6 space-y-2 text-sm">
-        <li><span class="text-gray-300">2 Wisudawan</li>
-        <li><span class="text-gray-300">90 Menit</li>
-        <li><span class="text-gray-300">All File On Google Drive</li>
-        <li><span class="text-gray-300">70 Photo Edited</li>
-      </ul>
-      <button class="w-full py-2 bg-white text-black rounded hover:bg-gray-300 transition">
-        Photo Session Schedule
-      </button>
-    </div>
-
-    <!-- PRO -->
-    <div
-      class="border border-gray-600 p-6 rounded-lg bg-black transition duration-300 transform hover:scale-105 hover:z-10 hover:shadow-xl"
-    >
-      <h2 class="text-2xl text-white font-bold mb-2">SEKAWAN</h2>
-      <p class="text-lg text-white font-semibold mb-6">Rp.600.000</p>
-      <ul class="mb-6 space-y-2 text-sm">
-        <li><span class="text-gray-300">4 Wisudawan</li>
-        <li><span class="text-gray-300">120 Menit</li>
-        <li><span class="text-gray-300">All File On Google Drive</li>
-        <li><span class="text-gray-300">140 Photo Edited</li>
-      </ul>
-      <button class="w-full py-2 bg-white text-black rounded hover:bg-gray-300 transition">
-        Photo Session Schedule
-      </button>
-    </div>
-  </div>
-          <div class="mt-12 border-t pt-6 text-center text-sm text-gray-500">
-          &copy; 2025 Satvika Memories. All rights reserved.
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-orange-700 mb-10">
+          Produk Kami
+        </h2>
+        <div class="swiper mySwiper px-4 md:px-10" role="list">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide flex flex-col items-center justify-center text-center border border-gray-200 rounded-xl p-6 bg-white shadow-md h-80"
+              role="listitem"
+              tabindex="0"
+            >
+              <img
+                src="1.png"
+                alt="Snack Bakso Goreng Paket BBQ"
+                class="product w-3/4 object-contain mb-4"
+                loading="lazy"
+              />
+              <p class="font-semibold text-lg text-orange-700">BBQ</p>
+            </div>
+            <div
+              class="swiper-slide flex flex-col items-center justify-center text-center border border-gray-200 rounded-xl p-6 bg-white shadow-md h-80"
+              role="listitem"
+              tabindex="0"
+            >
+              <img
+                src="keju.png"
+                alt="Snack Bakso Goreng Paket Keju"
+                class="product w-3/4 object-contain mb-4"
+                loading="lazy"
+              />
+              <p class="font-semibold text-lg text-orange-700">Keju</p>
+            </div>
+            <div
+              class="swiper-slide flex flex-col items-center justify-center text-center border border-gray-200 rounded-xl p-6 bg-white shadow-md h-80"
+              role="listitem"
+              tabindex="0"
+            >
+              <img
+                src="pedas.png"
+                alt="Snack Bakso Goreng Paket Original Pedas"
+                class="product w-3/4 object-contain mb-4"
+                loading="lazy"
+              />
+              <p class="font-semibold text-lg text-orange-700">
+                Original Pedas
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-</section>
+    </section>
 
+    <!-- Testimoni Section -->
+    <section
+      class="bg-white py-16 px-4"
+      role="region"
+      aria-label="Testimoni Pelanggan"
+    >
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-orange-700 mb-10">
+          Apa Kata Mereka?
+        </h2>
+        <div class="swiper testimonySwiper" role="list">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide h-[300px] flex flex-col justify-between bg-orange-100 rounded-xl p-6 shadow-md max-w-xl mx-auto"
+              role="listitem"
+            >
+              <p class="text-gray-700 italic mb-4">
+                “Makanannya enak banget! Rasanya bikin ketagihan. Pelayanannya
+                juga cepat dan ramah.”
+              </p>
+              <div class="flex items-center justify-center gap-3 mt-auto">
+                <img
+                  src="https://i.pravatar.cc/50?img=1"
+                  alt="Foto pelanggan Ayu Wulandari"
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div class="text-left">
+                  <p class="font-semibold text-orange-700">Ayu Wulandari</p>
+                  <p class="text-sm text-gray-500">Mahasiswa</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide h-[300px] flex flex-col justify-between bg-orange-100 rounded-xl p-6 shadow-md max-w-xl mx-auto"
+              role="listitem"
+            >
+              <p class="text-gray-700 italic mb-4">
+                “Paket Keju-nya juara! Cocok buat makan bareng keluarga.
+                Recommended banget!”
+              </p>
+              <div class="flex items-center justify-center gap-3 mt-auto">
+                <img
+                  src="https://i.pravatar.cc/50?img=2"
+                  alt="Foto pelanggan Rudi Hartanto"
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div class="text-left">
+                  <p class="font-semibold text-orange-700">Rudi Hartanto</p>
+                  <p class="text-sm text-gray-500">Karyawan Swasta</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide h-[300px] flex flex-col justify-between bg-orange-100 rounded-xl p-6 shadow-md max-w-xl mx-auto"
+              role="listitem"
+            >
+              <p class="text-gray-700 italic mb-4">
+                “Sudah coba semua paket, dan semuanya punya rasa unik
+                tersendiri. Pasti repeat order!”
+              </p>
+              <div class="flex items-center justify-center gap-3 mt-auto">
+                <img
+                  src="https://i.pravatar.cc/50?img=3"
+                  alt="Foto pelanggan Dina Maulida"
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div class="text-left">
+                  <p class="font-semibold text-orange-700">Dina Maulida</p>
+                  <p class="text-sm text-gray-500">Ibu Rumah Tangga</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination mt-6"></div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Script Lightbox -->
+    <!-- Footer Section -->
+    <footer
+      class="bg-orange-700 text-white py-4 text-center"
+      role="contentinfo"
+    >
+      <p>&copy; 2025 Bakso Goreng. All rights reserved.</p>
+      <p>
+        Follow us on
+        <a
+          href="https://instagram.com"
+          class="text-white hover:text-gray-300"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Instagram</a
+        >
+      </p>
+    </footer>
+
+    <!-- Modal Popup -->
+    <div
+      id="modal"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+      aria-modal="true"
+      role="dialog"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-desc"
+    >
+      <div
+        class="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full relative flex flex-col items-center text-center"
+        tabindex="0"
+      >
+        <button
+          id="modal-close"
+          aria-label="Tutup"
+          class="absolute top-3 right-3 text-gray-600 hover:text-gray-900 focus:outline-none"
+        >
+          &times;
+        </button>
+        <h3 id="modal-title" class="text-xl font-semibold mb-4 text-orange-700">
+          Detail Produk
+        </h3>
+        <img
+          id="modal-image"
+          src=""
+          alt="Gambar produk"
+          class="w-full h-48 object-contain mb-6"
+        />
+        <p id="modal-desc" class="text-gray-700 mb-6"></p>
+        <button
+          class="bg-orange-500 text-white px-5 py-2 rounded hover:bg-orange-600 transition"
+          onclick="alert('Fitur pemesanan segera hadir!')"
+        >
+          Pesan Sekarang
+        </button>
+      </div>
+    </div>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script>
-      function openLightbox(img) {
-        const lightbox = document.getElementById("lightbox");
-        const lightboxImg = document.getElementById("lightbox-img");
-        lightboxImg.src = img.src;
-        lightbox.classList.remove("hidden");
-      }
+      // Initialize Swiper for products carousel
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        breakpoints: {
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
 
-      function closeLightbox(event) {
-        if (event.target.id === "lightbox") {
-          document.getElementById("lightbox").classList.add("hidden");
+      // Initialize Swiper for testimonies carousel
+      const testimonySwiper = new Swiper(".testimonySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      // Modal popup handling
+      const modal = document.getElementById("modal");
+      const modalClose = document.getElementById("modal-close");
+
+      // Get all product images
+      const productImages = document.querySelectorAll(".product");
+
+      productImages.forEach((img) => {
+        img.addEventListener("click", () => {
+          // Set modal content
+          const modalImage = document.getElementById("modal-image");
+          const modalDesc = document.getElementById("modal-desc");
+          const modalTitle = document.getElementById("modal-title");
+
+          modalImage.src = img.src;
+          modalImage.alt = img.alt;
+          modalTitle.textContent = img.alt;
+          modalDesc.textContent =
+            "Ini adalah detail produk " +
+            img.alt +
+            ". Segera pesan dan nikmati!";
+
+          modal.classList.remove("hidden");
+          modal.focus();
+        });
+      });
+
+      modalClose.addEventListener("click", () => {
+        modal.classList.add("hidden");
+      });
+
+      // Close modal on outside click
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.add("hidden");
         }
-      }
+      });
+
+      // Close modal on ESC key press
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+          modal.classList.add("hidden");
+        }
+      });
     </script>
   </body>
 </html>
